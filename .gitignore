@@ -1,3 +1,4 @@
-credentials.*.env
-data/
-
+data/ipfs
+data/export
+credentials.*
+*.rdb

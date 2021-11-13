@@ -10,7 +10,7 @@ services:
       - 8337:8337
 
   scanner_tess:
-    image: macterra/metatron-scanner:v21.07.24
+    image: ghcr.io/cryptotechguru/metatron-scanner:v21.11.07
     volumes:
       - ./data:/app/data
     depends_on: 
@@ -24,7 +24,7 @@ services:
       - metatron.env
       
   vault:
-    image: macterra/metatron-vault:v21.08.15
+    image: ghcr.io/cryptotechguru/metatron-vault:v21.11.07
     ports:
       - "5000:5000"
     env_file:
